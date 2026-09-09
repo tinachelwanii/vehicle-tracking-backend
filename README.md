@@ -21,46 +21,6 @@ The backend manages users, bus routes, vehicles, GPS tracking data, authenticati
 
 ---
 
-## 2. Project Structure
-
-```text
-vehicle-tracking-backend/
-│
-├── app/
-│   ├── dependencies/
-│   │   └── auth.py
-│   │
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── route.py
-│   │   ├── vehicle.py
-│   │   ├── user.py
-│   │   └── gps_data.py
-│   │
-│   ├── routers/
-│   │   ├── auth.py
-│   │   └── tracking.py
-│   │
-│   ├── schemas/
-│   │   └── auth.py
-│   │
-│   ├── services/
-│   │   └── mqtt_service.py
-│   │
-│   ├── simulator/
-│   │   └── gps_simulator.py
-│   │
-│   ├── database.py
-│   ├── seed.py
-│   └── ...
-│
-├── gps.json
-├── requirements.txt
-└── README.md
-```
-
----
-
 ## 3. System Architecture
 
 ```text
