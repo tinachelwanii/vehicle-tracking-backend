@@ -7,7 +7,7 @@ The backend manages users, bus routes, vehicles, GPS tracking data, authenticati
 
 ---
 
-## 1. Technology Stack
+##  Technology Stack
 
 * **Python 3.x**
 * **FastAPI** — REST API framework
@@ -21,7 +21,7 @@ The backend manages users, bus routes, vehicles, GPS tracking data, authenticati
 
 ---
 
-## 3. System Architecture
+## System Architecture
 
 ```text
                     ┌──────────────────────┐
@@ -70,7 +70,7 @@ The backend manages users, bus routes, vehicles, GPS tracking data, authenticati
 
 ---
 
-## 4. Database Design
+##  Database Design
 
 The application uses PostgreSQL.
 
@@ -138,7 +138,7 @@ Vehicle
 
 ---
 
-## 5. Authentication
+## Authentication
 
 Authentication is implemented using **JWT Bearer tokens**.
 
@@ -170,7 +170,7 @@ Protected APIs use the authenticated user to determine which route and vehicle t
 
 ---
 
-## 6. Route and Vehicle Assignment
+##  Route and Vehicle Assignment
 
 Each user is assigned:
 
@@ -204,7 +204,7 @@ The authenticated user's `vehicle_id` is used when retrieving location and histo
 
 ---
 
-## 7. MQTT GPS Data Flow
+## MQTT GPS Data Flow
 
 MQTT is used to receive GPS data from vehicles.
 
@@ -261,7 +261,7 @@ The backend maintains historical GPS records rather than replacing previous loca
 
 ---
 
-## 8. GPS Simulator
+## GPS Simulator
 
 A GPS simulator is included for testing.
 
@@ -290,7 +290,7 @@ Make sure an MQTT broker is running before starting the simulator.
 
 ---
 
-## 9. API Endpoints
+## API Endpoints
 
 ### Authentication
 
@@ -432,7 +432,7 @@ Checks PostgreSQL connectivity.
 
 ---
 
-## 10. Authorization
+##  Authorization
 
 Protected endpoints use the authenticated JWT user.
 
@@ -462,7 +462,7 @@ A user cannot simply provide another vehicle ID to access another user's vehicle
 
 ---
 
-## 11. Local Setup
+##  Local Setup
 
 ### Prerequisites
 
@@ -508,7 +508,7 @@ pip install -r requirements.txt
 
 ---
 
-## 12. Environment Variables
+## Environment Variables
 
 Create a `.env` file:
 
@@ -526,7 +526,7 @@ MQTT_PORT=1883
 
 ---
 
-## 13. Database Setup
+##  Database Setup
 
 Create a PostgreSQL database named:
 
@@ -544,7 +544,7 @@ python .\app\seed.py
 
 ---
 
-## 14. Run Backend
+##  Run Backend
 
 Start FastAPI:
 
@@ -582,7 +582,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 16. Example Test Users
+##  Example Test Users
 
 ### User A
 
@@ -606,7 +606,7 @@ These credentials are intended for local assessment/testing purposes.
 
 ---
 
-## 17. Key Features
+##  Key Features
 
 * JWT-based authentication
 * Multiple users
@@ -625,25 +625,8 @@ These credentials are intended for local assessment/testing purposes.
 
 ---
 
-## 18. Future Improvements
 
-Possible production improvements include:
-
-* WebSocket-based real-time location updates
-* Redis caching
-* Refresh tokens
-* Role-based access control
-* Geofencing
-* Route deviation detection
-* ETA calculation
-* Production MQTT authentication
-* Docker deployment
-* Cloud deployment
-* Database migrations using Alembic
-
----
-
-## 19. Repository
+##  Repository
 
 Backend repository:
 
